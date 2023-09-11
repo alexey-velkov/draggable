@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #595db8;
+}
+body .sortable-list {
+  background: #fff;
+  width: 445px;
+  border-radius: 7px;
+  padding: 30px 25px 20px;
+}
+body .sortable-list .item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+body .sortable-list .item.dragging :where(.details, i) {
+  opacity: 0;
+}
+body .sortable-list .item .details {
+  display: flex;
+  align-items: center;
+}
+body .sortable-list .item .details img {
+  width: 48px;
+  height: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+body .sortable-list .item .details span {
+  font-size: 1.13rem;
+}
+body .sortable-list .item i {
+  font-size: 1.13rem;
+  color: #474747;
+}/*# sourceMappingURL=style.css.map */
